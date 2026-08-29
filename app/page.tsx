@@ -35,7 +35,7 @@ const portfolio = [
   {
     title: "Beautiful Beginnings",
     category: "Pre-Wedding",
-    image: "/images/prewedding-01.JPG",
+    image: "/images/prewedding-01.jpg",
   },
   {
     title: "Motherhood",
@@ -45,7 +45,7 @@ const portfolio = [
   {
     title: "Little Moments",
     category: "Baby & Kids",
-    image: "/images/baby-01.JPG",
+    image: "/images/baby-01.jpg",
   },
 ];
 
@@ -313,7 +313,7 @@ export default function Home() {
           <div className="relative min-h-[590px] w-full overflow-hidden bg-[#111111] sm:min-h-[650px] lg:min-h-0 lg:w-[60%]">
 
             <img
-              src="/images/hero.Jpg"
+              src="/images/hero.JPG"
               alt="HYD Photography"
               className="absolute inset-0 h-full w-full object-cover object-[50%_center] lg:object-[50%_center]"
             />
