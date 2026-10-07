@@ -60,7 +60,13 @@ function InstagramIcon() {
     >
       <rect x="3" y="3" width="18" height="18" rx="5" />
       <circle cx="12" cy="12" r="4" />
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+      <circle
+        cx="17.5"
+        cy="6.5"
+        r="1"
+        fill="currentColor"
+        stroke="none"
+      />
     </svg>
   );
 }
@@ -123,214 +129,226 @@ export default function Home() {
     <main className="min-h-screen bg-white text-[#111111]">
 
       {/* =====================================================
-          HEADER
-      ===================================================== */}
-
-      <header className="absolute left-0 top-0 z-50 w-full bg-white">
-
-        <div className="mx-auto flex h-[104px] max-w-[1600px] items-center justify-between px-5 sm:px-8 md:px-10 lg:px-16">
-
-          {/* LOGO */}
-
-          <a
-            href="#home"
-            className="block w-[95px] sm:w-[110px] md:w-[125px]"
-          >
-            <img
-              src="/logo.png"
-              alt="HYD Photography"
-              className="h-auto w-full object-contain"
-            />
-          </a>
-
-          {/* DESKTOP NAVIGATION */}
-
-          <nav className="hidden items-center gap-7 xl:gap-9 lg:flex">
-
-            <a
-              href="#home"
-              className="border-b-2 border-[#f5a400] pb-2 text-[12px] font-bold uppercase tracking-[0.08em]"
-            >
-              Home
-            </a>
-
-            <a
-              href="#about"
-              className="pb-2 text-[12px] font-bold uppercase tracking-[0.08em] transition hover:text-[#f5a400]"
-            >
-              About
-            </a>
-
-            <a
-              href="#services"
-              className="pb-2 text-[12px] font-bold uppercase tracking-[0.08em] transition hover:text-[#f5a400]"
-            >
-              Services
-            </a>
-
-            <a
-              href="#portfolio"
-              className="pb-2 text-[12px] font-bold uppercase tracking-[0.08em] transition hover:text-[#f5a400]"
-            >
-              Portfolio
-            </a>
-
-            <a
-              href="#gallery"
-              className="pb-2 text-[12px] font-bold uppercase tracking-[0.08em] transition hover:text-[#f5a400]"
-            >
-              Gallery
-            </a>
-
-            <a
-              href="#contact"
-              className="pb-2 text-[12px] font-bold uppercase tracking-[0.08em] transition hover:text-[#f5a400]"
-            >
-              Contact
-            </a>
-
-          </nav>
-
-          {/* BOOK NOW */}
-
-          <a
-            href="#contact"
-            className="hidden rounded-full bg-[#f5a400] px-8 py-3.5 text-[11px] font-bold uppercase tracking-[0.08em] text-white shadow-sm transition hover:bg-[#df9200] lg:block"
-          >
-            Book Now
-          </a>
-
-          {/* MOBILE BOOK BUTTON */}
-
-          <a
-            href="#contact"
-            className="rounded-full bg-[#f5a400] px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-white lg:hidden"
-          >
-            Book Now
-          </a>
-
-        </div>
-
-      </header>
-
-
-      {/* =====================================================
           HERO
       ===================================================== */}
 
       <section
         id="home"
-        className="relative overflow-hidden bg-[#050505] pt-[104px]"
+        className="relative overflow-hidden bg-[#050505]"
       >
+        <div className="mx-auto flex w-full max-w-[2560px] flex-col lg:flex-row">
 
-        <div className="mx-auto flex min-h-[calc(100vh-104px)] max-w-[1800px] flex-col lg:flex-row">
+          {/* LEFT CONTENT */}
 
-          {/* =================================================
-              LEFT CONTENT
-          ================================================= */}
+          <div
+            className="
+              relative
+              z-20
+              flex
+              w-full
+              items-center
+              bg-[#050505]
+              px-6
+              py-16
 
-          <div className="relative z-20 flex w-full items-center bg-[#050505] px-7 py-20 sm:px-10 md:px-14 lg:w-[40%] lg:px-16 lg:py-16 xl:px-20">
+              sm:px-8
+              sm:py-20
 
-            <div className="w-full max-w-[590px]">
+              md:px-12
+              md:py-24
 
-              <p className="mb-6 text-xs font-bold uppercase tracking-[0.35em] text-[#f5a400] sm:text-sm">
+              lg:min-h-screen
+              lg:w-[42%]
+              lg:px-12
+
+              xl:w-[40%]
+              xl:px-16
+
+              2xl:px-20
+            "
+          >
+            <div className="w-full max-w-[650px] lg:ml-auto lg:mr-4 xl:mr-8">
+
+              <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.32em] text-[#f5a400] sm:text-xs md:text-sm xl:tracking-[0.38em]">
                 Capturing Moments
               </p>
 
-              <h1 className="text-[52px] font-black uppercase leading-[0.88] tracking-[-0.045em] text-white sm:text-[66px] md:text-[78px] lg:text-[76px] xl:text-[92px]">
+              <h1
+                className="
+                  font-black
+                  uppercase
+                  leading-[0.86]
+                  tracking-[-0.045em]
+                  text-white
 
+                  text-[48px]
+                  sm:text-[58px]
+                  md:text-[70px]
+                  lg:text-[62px]
+                  xl:text-[78px]
+                  2xl:text-[96px]
+                "
+              >
                 Creating
 
                 <span className="block text-[#f5a400]">
                   Memories
                 </span>
-
               </h1>
 
-              <p className="mt-8 max-w-[500px] text-base leading-7 text-white/75 md:text-lg lg:text-[17px]">
+              <p className="mt-6 max-w-[520px] text-sm leading-6 text-white/70 sm:mt-7 sm:text-base sm:leading-7 md:text-lg lg:text-base xl:text-lg">
                 We capture real emotions and beautiful moments
                 that you will cherish forever.
               </p>
 
-              {/* BUTTONS */}
-
-              <div className="mt-9 flex flex-wrap gap-4">
+              <div className="mt-8 flex flex-wrap gap-3 sm:mt-9 sm:gap-4">
 
                 <a
-                  href="#portfolio"
-                  className="inline-flex items-center gap-3 bg-[#f5a400] px-7 py-4 text-xs font-bold uppercase tracking-[0.1em] text-white transition duration-300 hover:bg-[#df9200]"
+                  href="/portfolio"
+                  className="
+                    inline-flex
+                    items-center
+                    gap-3
+                    bg-[#f5a400]
+                    px-6
+                    py-3.5
+                    text-[10px]
+                    font-bold
+                    uppercase
+                    tracking-[0.08em]
+                    text-white
+                    transition
+                    duration-300
+                    hover:bg-[#df9200]
+
+                    sm:px-7
+                    sm:py-4
+                    sm:text-xs
+                  "
                 >
                   View Portfolio
                   <ArrowIcon />
                 </a>
 
                 <a
-                  href="#contact"
-                  className="border border-[#f5a400] px-7 py-4 text-xs font-bold uppercase tracking-[0.1em] text-white transition duration-300 hover:bg-[#f5a400]"
+                  href="/contact"
+                  className="
+                    border
+                    border-[#f5a400]
+                    px-6
+                    py-3.5
+                    text-[10px]
+                    font-bold
+                    uppercase
+                    tracking-[0.08em]
+                    text-white
+                    transition
+                    duration-300
+                    hover:bg-[#f5a400]
+
+                    sm:px-7
+                    sm:py-4
+                    sm:text-xs
+                  "
                 >
                   Contact Us
                 </a>
 
               </div>
 
-              {/* SLIDER */}
-
-              <div className="mt-14 flex items-center gap-4 text-sm">
+              <div className="mt-10 flex items-center gap-3 text-[11px] sm:mt-12 sm:gap-4 sm:text-sm lg:mt-14">
 
                 <span className="font-bold text-[#f5a400]">
                   01
                 </span>
 
-                <div className="h-[2px] w-9 bg-[#f5a400]" />
+                <div className="h-[2px] w-7 bg-[#f5a400] sm:w-9" />
 
-                <span className="text-white/45">
-                  02
-                </span>
+                <span className="text-white/40">02</span>
 
-                <div className="h-px w-9 bg-white/25" />
+                <div className="h-px w-7 bg-white/20 sm:w-9" />
 
-                <span className="text-white/45">
-                  03
-                </span>
+                <span className="text-white/40">03</span>
 
-                <div className="h-px w-9 bg-white/25" />
+                <div className="h-px w-7 bg-white/20 sm:w-9" />
 
-                <span className="text-white/45">
-                  04
-                </span>
+                <span className="text-white/40">04</span>
 
               </div>
 
             </div>
-
           </div>
 
 
-          {/* =================================================
-              HERO IMAGE
-          ================================================= */}
+          {/* RIGHT IMAGE */}
 
-          <div className="relative min-h-[590px] w-full overflow-hidden bg-[#111111] sm:min-h-[650px] lg:min-h-0 lg:w-[60%]">
+          <div
+            className="
+              relative
+              flex
+              w-full
+              items-center
+              justify-center
+              overflow-hidden
+              bg-[#111111]
 
+              min-h-[500px]
+              sm:min-h-[580px]
+              md:min-h-[650px]
+
+              lg:min-h-screen
+              lg:w-[58%]
+              xl:w-[60%]
+            "
+          >
             <img
               src="/images/hero.JPG"
               alt="HYD Photography"
-              className="absolute inset-0 h-full w-full object-cover object-[50%_center] lg:object-[50%_center]"
+              className="
+                relative
+                z-10
+                block
+                h-full
+                w-full
+                object-cover
+
+                object-[50%_42%]
+                md:object-[50%_45%]
+                lg:object-[50%_center]
+                xl:object-[50%_center]
+              "
             />
 
-            {/* IMAGE OVERLAY */}
-
-            <div className="absolute inset-0 bg-gradient-to-r from-[#050505]/15 via-transparent to-transparent" />
-
+            <div className="absolute inset-0 z-20 bg-gradient-to-r from-black/10 via-transparent to-transparent" />
           </div>
 
 
-          {/* =================================================
-              SOCIAL SIDEBAR
-          ================================================= */}
+          {/* SOCIAL BAR */}
 
-          <div className="absolute bottom-10 right-6 z-40 hidden flex-col items-center gap-5 rounded-full border border-white/30 bg-black/25 px-3 py-4 text-white backdrop-blur-md md:flex">
+          <div
+            className="
+              absolute
+              bottom-8
+              right-5
+              z-40
+              hidden
+              flex-col
+              items-center
+              gap-5
+              rounded-full
+              border
+              border-white/30
+              bg-black/25
+              px-3
+              py-4
+              text-white
+              backdrop-blur-md
 
+              md:flex
+              lg:bottom-10
+              lg:right-6
+            "
+          >
             <a
               href="#"
               aria-label="Instagram"
@@ -356,43 +374,31 @@ export default function Home() {
             >
               <WhatsAppIcon />
             </a>
-
           </div>
 
         </div>
-
       </section>
 
 
       {/* =====================================================
-          <a href="/about">
+          ABOUT
       ===================================================== */}
 
       <section
         id="about"
         className="px-6 py-20 md:px-10 md:py-28 lg:px-16"
       >
-
         <div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[300px_1fr] lg:items-center">
 
-          {/* LOGO */}
-
           <div className="flex justify-center lg:justify-start">
-
             <div className="relative flex aspect-square w-[220px] items-center justify-center border border-black/15 p-8 md:w-[240px]">
-
               <img
                 src="/logo.png"
                 alt="HYD Photography logo"
                 className="w-full object-contain"
               />
-
             </div>
-
           </div>
-
-
-          {/* CONTENT */}
 
           <div>
 
@@ -414,15 +420,13 @@ export default function Home() {
               memories into timeless treasures.
             </p>
 
-
-            {/* FEATURES */}
-
             <div className="mt-10 grid grid-cols-2 gap-y-10 md:grid-cols-4 md:gap-8">
 
               <div>
                 <div className="text-3xl text-[#f5a400]">
                   ◎
                 </div>
+
                 <h3 className="mt-3 text-xs font-bold uppercase leading-5">
                   Professional
                   <br />
@@ -434,6 +438,7 @@ export default function Home() {
                 <div className="text-3xl text-[#f5a400]">
                   ☆
                 </div>
+
                 <h3 className="mt-3 text-xs font-bold uppercase leading-5">
                   High Quality
                   <br />
@@ -445,6 +450,7 @@ export default function Home() {
                 <div className="text-3xl text-[#f5a400]">
                   ◷
                 </div>
+
                 <h3 className="mt-3 text-xs font-bold uppercase leading-5">
                   On Time
                   <br />
@@ -456,6 +462,7 @@ export default function Home() {
                 <div className="text-3xl text-[#f5a400]">
                   ♡
                 </div>
+
                 <h3 className="mt-3 text-xs font-bold uppercase leading-5">
                   Customer
                   <br />
@@ -464,11 +471,9 @@ export default function Home() {
               </div>
 
             </div>
-
           </div>
 
         </div>
-
       </section>
 
 
@@ -480,7 +485,6 @@ export default function Home() {
         id="services"
         className="bg-[#faf9f6] px-6 py-20 md:px-10 md:py-24 lg:px-16"
       >
-
         <div className="mx-auto max-w-[1500px]">
 
           <div className="mb-12">
@@ -497,14 +501,23 @@ export default function Home() {
 
           </div>
 
-
           <div className="grid border border-black/5 bg-white md:grid-cols-2 lg:grid-cols-5">
 
             {services.map((service) => (
-
               <div
                 key={service.number}
-                className="group border-b border-black/10 p-7 transition duration-300 hover:bg-[#111111] lg:border-b-0 lg:border-r last:border-r-0"
+                className="
+                  group
+                  border-b
+                  border-black/10
+                  p-7
+                  transition
+                  duration-300
+                  hover:bg-[#111111]
+                  lg:border-b-0
+                  lg:border-r
+                  last:border-r-0
+                "
               >
 
                 <span className="text-2xl font-light text-[#f5a400]">
@@ -524,13 +537,10 @@ export default function Home() {
                 </div>
 
               </div>
-
             ))}
 
           </div>
-
         </div>
-
       </section>
 
 
@@ -542,7 +552,6 @@ export default function Home() {
         id="portfolio"
         className="px-6 py-20 md:px-10 md:py-28 lg:px-16"
       >
-
         <div className="mx-auto max-w-[1500px]">
 
           <div className="mb-10 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
@@ -560,8 +569,23 @@ export default function Home() {
             </div>
 
             <a
-              href="#gallery"
-              className="inline-flex items-center gap-3 border border-[#f5a400] px-6 py-3 text-xs font-bold uppercase tracking-wider transition hover:bg-[#f5a400] hover:text-white"
+              href="/portfolio"
+              className="
+                inline-flex
+                items-center
+                gap-3
+                border
+                border-[#f5a400]
+                px-6
+                py-3
+                text-xs
+                font-bold
+                uppercase
+                tracking-wider
+                transition
+                hover:bg-[#f5a400]
+                hover:text-white
+              "
             >
               View All Portfolio
               <ArrowIcon />
@@ -570,18 +594,15 @@ export default function Home() {
           </div>
 
 
-          {/* PHOTO GRID */}
-
           <div
             id="gallery"
             className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
           >
 
             {portfolio.map((item) => (
-
               <a
                 key={item.title}
-                href="#contact"
+                href="/contact"
                 className="group relative aspect-[4/5] overflow-hidden bg-black"
               >
 
@@ -606,13 +627,10 @@ export default function Home() {
                 </div>
 
               </a>
-
             ))}
 
           </div>
-
         </div>
-
       </section>
 
 
@@ -621,11 +639,9 @@ export default function Home() {
       ===================================================== */}
 
       <section className="bg-[#111111] px-6 py-12 text-white md:px-10 lg:px-16">
-
         <div className="mx-auto grid max-w-[1500px] grid-cols-2 gap-10 md:grid-cols-4">
 
           <div className="text-center">
-
             <div className="text-4xl font-black text-[#f5a400]">
               500+
             </div>
@@ -633,11 +649,9 @@ export default function Home() {
             <p className="mt-2 text-[10px] font-semibold uppercase tracking-wider text-white/70">
               Projects Completed
             </p>
-
           </div>
 
           <div className="text-center">
-
             <div className="text-4xl font-black text-[#f5a400]">
               300+
             </div>
@@ -645,11 +659,9 @@ export default function Home() {
             <p className="mt-2 text-[10px] font-semibold uppercase tracking-wider text-white/70">
               Happy Clients
             </p>
-
           </div>
 
           <div className="text-center">
-
             <div className="text-4xl font-black text-[#f5a400]">
               8+
             </div>
@@ -657,11 +669,9 @@ export default function Home() {
             <p className="mt-2 text-[10px] font-semibold uppercase tracking-wider text-white/70">
               Years Experience
             </p>
-
           </div>
 
           <div className="text-center">
-
             <div className="text-4xl font-black text-[#f5a400]">
               20K+
             </div>
@@ -669,11 +679,9 @@ export default function Home() {
             <p className="mt-2 text-[10px] font-semibold uppercase tracking-wider text-white/70">
               Memories Captured
             </p>
-
           </div>
 
         </div>
-
       </section>
 
 
@@ -692,7 +700,11 @@ export default function Home() {
 
           <div>
 
-            <h2 className="max-w-[650px] text-3xl font-black uppercase leading-tight md:text-5xl">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-black/60">
+              Let's Create Something Beautiful
+            </p>
+
+            <h2 className="mt-3 max-w-[650px] text-3xl font-black uppercase leading-tight md:text-5xl">
               Let's Capture Your
               <br />
               Beautiful Moments
@@ -711,7 +723,23 @@ export default function Home() {
               href="https://wa.me/919949530010"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 rounded-md bg-[#111111] px-7 py-4 text-xs font-bold uppercase tracking-wider text-white transition hover:bg-black/80"
+              className="
+                flex
+                items-center
+                justify-center
+                gap-3
+                rounded-md
+                bg-[#111111]
+                px-7
+                py-4
+                text-xs
+                font-bold
+                uppercase
+                tracking-wider
+                text-white
+                transition
+                hover:bg-black/80
+              "
             >
               <WhatsAppIcon />
               WhatsApp Us
@@ -719,7 +747,25 @@ export default function Home() {
 
             <a
               href="tel:+919949530010"
-              className="flex items-center justify-center gap-3 rounded-md border-2 border-[#111111] px-7 py-4 text-xs font-bold uppercase tracking-wider text-[#111111] transition hover:bg-[#111111] hover:text-white"
+              className="
+                flex
+                items-center
+                justify-center
+                gap-3
+                rounded-md
+                border-2
+                border-[#111111]
+                px-7
+                py-4
+                text-xs
+                font-bold
+                uppercase
+                tracking-wider
+                text-[#111111]
+                transition
+                hover:bg-[#111111]
+                hover:text-white
+              "
             >
               <PhoneIcon />
               +91 99495 30010
@@ -728,142 +774,7 @@ export default function Home() {
           </div>
 
         </div>
-
       </section>
-
-
-      {/* =====================================================
-          FOOTER
-      ===================================================== */}
-
-      <footer className="bg-[#111111] px-6 py-12 text-white md:px-10 lg:px-16">
-
-        <div className="mx-auto grid max-w-[1500px] gap-12 md:grid-cols-4">
-
-          {/* BRAND */}
-
-          <div>
-
-            <img
-              src="/logo.png"
-              alt="HYD Photography"
-              className="w-[115px] object-contain"
-            />
-
-            <p className="mt-5 max-w-[270px] text-xs leading-6 text-white/50">
-              Capturing moments, emotions and memories
-              that stay with you forever.
-            </p>
-
-          </div>
-
-
-          {/* QUICK LINKS */}
-
-          <div>
-
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#f5a400]">
-              Quick Links
-            </h3>
-
-            <div className="mt-5 space-y-3 text-xs text-white/60">
-
-              <a href="#home" className="block hover:text-white">
-                Home
-              </a>
-
-              <a href="#about" className="block hover:text-white">
-                About
-              </a>
-
-              <a href="#services" className="block hover:text-white">
-                Services
-              </a>
-
-              <a href="#portfolio" className="block hover:text-white">
-                Portfolio
-              </a>
-
-              <a href="#contact" className="block hover:text-white">
-                Contact
-              </a>
-
-            </div>
-
-          </div>
-
-
-          {/* SERVICES */}
-
-          <div>
-
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#f5a400]">
-              Services
-            </h3>
-
-            <div className="mt-5 space-y-3 text-xs text-white/60">
-
-              <p>Wedding Photography</p>
-              <p>Pre-Wedding Shoots</p>
-              <p>Maternity Photography</p>
-              <p>Baby & Kids Photography</p>
-              <p>Events Photography</p>
-
-            </div>
-
-          </div>
-
-
-          {/* FOLLOW */}
-
-          <div>
-
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#f5a400]">
-              Follow Us
-            </h3>
-
-            <div className="mt-5 flex gap-5 text-white">
-
-              <a
-                href="#"
-                aria-label="Instagram"
-                className="transition hover:text-[#f5a400]"
-              >
-                <InstagramIcon />
-              </a>
-
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="transition hover:text-[#f5a400]"
-              >
-                <FacebookIcon />
-              </a>
-
-              <a
-                href="https://wa.me/919949530010"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="WhatsApp"
-                className="transition hover:text-[#25D366]"
-              >
-                <WhatsAppIcon />
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        {/* COPYRIGHT */}
-
-        <div className="mx-auto mt-10 max-w-[1500px] border-t border-white/10 pt-6 text-center text-[10px] text-white/40">
-          © {new Date().getFullYear()} HYD PHOTOGRAPHY. ALL RIGHTS RESERVED.
-        </div>
-
-      </footer>
 
 
       {/* =====================================================
@@ -875,7 +786,27 @@ export default function Home() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with HYD Photography on WhatsApp"
-        className="fixed bottom-6 right-6 z-[100] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl transition duration-300 hover:scale-110 md:bottom-8 md:right-8"
+        className="
+          fixed
+          bottom-6
+          right-6
+          z-[100]
+          flex
+          h-14
+          w-14
+          items-center
+          justify-center
+          rounded-full
+          bg-[#25D366]
+          text-white
+          shadow-2xl
+          transition
+          duration-300
+          hover:scale-110
+
+          md:bottom-8
+          md:right-8
+        "
       >
         <WhatsAppIcon />
       </a>
