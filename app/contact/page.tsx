@@ -167,10 +167,8 @@ export default function ContactPage() {
                   <option>Pre-Wedding Photography</option>
                   <option>Maternity Photography</option>
                   <option>Baby & Kids Photography</option>
-                  <option>Birthday Photography</option>
-                  <option>Event Photography</option>
+                  <option>Corporate Events & Automotive</option>
                   <option>Portrait Photography</option>
-                  <option>Corporate Photography</option>
                 </select>
 
               </div>

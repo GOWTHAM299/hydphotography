@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.hydphotography.com"),
 
   title: {
-    default: "HYD Photography | Wedding & Event Photography in Hyderabad",
+    default: "HYD Photography | Wedding, Corporate & Automotive Photography in Hyderabad",
     template: "%s | HYD Photography",
   },
 
   description:
-    "HYD Photography captures weddings, pre-weddings, maternity, baby, portraits and special events in Hyderabad with timeless photography.",
+    "HYD Photography captures weddings, pre-weddings, maternity, baby, portraits, corporate events and automotive photography in Hyderabad.",
 
   keywords: [
     "HYD Photography",
@@ -33,7 +33,8 @@ export const metadata: Metadata = {
     "Pre Wedding Photography Hyderabad",
     "Maternity Photography Hyderabad",
     "Baby Photography Hyderabad",
-    "Event Photography Hyderabad",
+    "Corporate Events & Automotive Hyderabad",
+    "Automotive Photography Hyderabad",
     "Portrait Photography Hyderabad",
   ],
 
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://www.hydphotography.com",
     siteName: "HYD Photography",
-    title: "HYD Photography | Wedding & Event Photography in Hyderabad",
+    title: "HYD Photography | Wedding, Corporate & Automotive Photography in Hyderabad",
     description:
       "Capturing moments, emotions and memories that stay with you forever.",
     images: [

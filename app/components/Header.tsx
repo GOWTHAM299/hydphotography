@@ -10,7 +10,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-[100] w-full bg-white">
+    <header className="sticky top-0 z-[100] w-full bg-white">
 
       <div className="mx-auto flex h-[76px] max-w-[1600px] items-center justify-between px-5 sm:h-[84px] sm:px-8 lg:h-[88px] lg:px-16">
 

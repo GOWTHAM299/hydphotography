@@ -87,7 +87,8 @@ export default function Footer() {
             <p>Pre-Wedding Photography</p>
             <p>Maternity Photography</p>
             <p>Baby & Kids Photography</p>
-            <p>Event Photography</p>
+            <p>Corporate Events & Automotive</p>
+            <p>Portrait Photography</p>
           </div>
         </div>
 

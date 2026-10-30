@@ -1,3 +1,5 @@
+import { getOptimizedImagePath } from "../lib/image-asset";
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white text-[#111111]">
@@ -29,7 +31,7 @@ export default function AboutPage() {
 
           <div>
             <img
-              src="/images/hero.jpg"
+              src={getOptimizedImagePath("/images/brand/hero.JPG")}
               alt="HYD Photography"
               className="min-h-[450px] w-full object-cover"
             />
@@ -63,7 +65,7 @@ export default function AboutPage() {
 
               <a
                 href="/contact"
-                className="mt-8 inline-block bg-[#f5a400] px-7 py-4 text-xs font-bold uppercase tracking-wider text-white transition hover:bg-[#df9200]"
+                className="mt-8 inline-block bg-[#f5a400] px-7 py-4 text-xs font-bold uppercase tracking-wider text-white transition-colors duration-300 ease-out hover:bg-[#df9200]"
               >
                 Book A Session
               </a>

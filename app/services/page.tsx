@@ -25,9 +25,9 @@ const services = [
   },
   {
     number: "05",
-    title: "Events & Party Photography",
+    title: "Corporate Events & Automotive",
     description:
-      "Professional coverage for birthdays, celebrations, corporate events and special occasions.",
+      "Professional coverage for corporate events, automotive campaigns and brand launches.",
   },
   {
     number: "06",

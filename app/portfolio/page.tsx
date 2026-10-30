@@ -1,23 +1,25 @@
+import { getOptimizedImagePath } from "../lib/image-asset";
+
 const works = [
   {
     title: "Wedding Stories",
     category: "Wedding",
-    image: "/images/wedding-01.jpg",
+    image: "/images/wedding/wedding-01.JPG",
   },
   {
     title: "Beautiful Beginnings",
     category: "Pre-Wedding",
-    image: "/images/prewedding-01.jpg",
+    image: "/images/pre-wedding/prewedding-01.jpg",
   },
   {
     title: "Motherhood",
     category: "Maternity",
-    image: "/images/maternity-01.jpg",
+    image: "/images/maternity/33.jpg",
   },
   {
     title: "Little Moments",
     category: "Baby & Kids",
-    image: "/images/baby-01.jpg",
+    image: "/images/baby-kids/baby-01.jpg",
   },
 ];
 
@@ -69,7 +71,7 @@ export default function PortfolioPage() {
               >
 
                 <img
-                  src={work.image}
+                  src={getOptimizedImagePath(work.image)}
                   alt={work.title}
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                 />

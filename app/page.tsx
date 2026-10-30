@@ -1,3 +1,5 @@
+import { getOptimizedImagePath } from "./lib/image-asset";
+
 const services = [
   {
     number: "01",
@@ -21,8 +23,9 @@ const services = [
   },
   {
     number: "05",
-    title: "Events & Party Photography",
-    description: "From birthdays to corporate events, we do it all.",
+    title: "Corporate Events & Automotive",
+    description:
+      "Professional coverage for corporate events, automotive campaigns and brand launches.",
   },
 ];
 
@@ -30,22 +33,22 @@ const portfolio = [
   {
     title: "Wedding Stories",
     category: "Wedding",
-    image: "/images/wedding-01.JPG",
+    image: "/images/wedding/wedding-01.JPG",
   },
   {
     title: "Beautiful Beginnings",
     category: "Pre-Wedding",
-    image: "/images/prewedding-01.jpg",
+    image: "/images/pre-wedding/prewedding-01.jpg",
   },
   {
     title: "Motherhood",
     category: "Maternity",
-    image: "/images/maternity-01.JPG",
+    image: "/images/maternity/33.jpg",
   },
   {
     title: "Little Moments",
     category: "Baby & Kids",
-    image: "/images/baby-01.jpg",
+    image: "/images/baby-kids/baby-01.jpg",
   },
 ];
 
@@ -302,7 +305,7 @@ export default function Home() {
             "
           >
             <img
-              src="/images/hero.JPG"
+              src={getOptimizedImagePath("/images/brand/hero.JPG")}
               alt="HYD Photography"
               className="
                 relative
@@ -607,7 +610,7 @@ export default function Home() {
               >
 
                 <img
-                  src={item.image}
+                  src={getOptimizedImagePath(item.image)}
                   alt={item.title}
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
                 />
