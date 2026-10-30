@@ -353,7 +353,9 @@ export default function Home() {
             "
           >
             <a
-              href="#"
+              href="https://www.instagram.com/_hyd_photography_/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
               className="transition hover:text-[#f5a400]"
             >
@@ -361,7 +363,9 @@ export default function Home() {
             </a>
 
             <a
-              href="#"
+              href="https://www.facebook.com/HydPhotography"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
               className="transition hover:text-[#f5a400]"
             >
